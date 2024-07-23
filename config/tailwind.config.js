@@ -16,16 +16,19 @@ module.exports = {
       },
       backgroundImage: {
         'hero-image': "url(/assets/landing_hero.jpg)",
+        'plan':"url(/assets/tic-tac-toe.png)",
       },
 
       height: {
         '75vh': '75vh',
-        '100vh':'100vh'
+        '100vh':'100vh',
+        '600px':'600px'
       },
 
       width: {
         '34rem':'34rem',
         '72rem':'72rem',
+        '900px':'900px',
       },
     },
   },
