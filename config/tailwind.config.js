@@ -15,7 +15,7 @@ module.exports = {
         'poppins':["Poppins", "sans-serif"],
       },
       backgroundImage: {
-        'hero-image': "url(/assets/landing_hero.png)",
+        'hero-image': "url(/assets/landing_hero.jpg)",
         'plan':"url(/assets/tic-tac-toe.png)",
       },
 
