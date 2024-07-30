@@ -16,7 +16,7 @@ module.exports = {
       },
       backgroundImage: {
         'hero-image': "url(/assets/landing_hero.png)",
-        'plan':"url(/assets/tic-tac-toe.png)",
+        'plan':"url(/assets/images/tic-tac-toe.png)",
       },
 
       height: {
