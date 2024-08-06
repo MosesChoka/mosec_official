@@ -31,6 +31,10 @@ module.exports = {
         '72rem':'72rem',
         '900px':'900px',
       },
+
+      boxShadow: {
+        'custom-blue': '0 4px 6px rgba(59, 130, 246)',
+      },
     },
   },
   plugins: [
