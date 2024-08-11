@@ -283,3 +283,26 @@
 <div class="font-roboto bg-gray-100 md:h-75vh">
   <%= render "layouts/components/testimonials" %>
 </div>
+<div id="map">
+</div>
+<script>
+  let map;
+
+  async function initMap() {
+  const { Map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+  const map = new Map(document.getElementById("map"), {
+    center: { lat: 0.0593318, lng: 34.2835138 },
+    zoom: 8,
+  });
+
+  const marker = new AdvancedMarkerElement({
+    map,
+    position: { lat: 0.0593318, lng: 34.2835138},
+  });
+
+  }
+
+  initMap();
+</script>
