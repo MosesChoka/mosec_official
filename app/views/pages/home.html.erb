@@ -5,13 +5,12 @@
       <h1 class="font-roboto font-bold text-3xl md:text-4xl text-center text-white sm:text-left">Small businesses <span class="text-blue-400 md:text-4xl">W</span>ebsite design, development</h1>
       <h2 class="font-roboto font-semibold text-2xl md:text-3xl text-center sm:text-left"> & <span class="text-white md:text-4xl">A</span>nalytics services</h2>
     </div>
-    <div class="flex flex-col items-center justify-center md:flex-row md:justify-start  mt-4 sm:mt-8 ">
-      <div>
-        <button class="font-roboto font-semibold bg-blue-700 opacity-70 p-3 border-2 rounded-sm hover:bg-white uppercase"> Learn More
-        </button>
+    <div class=" font-roboto  flex flex-col items-center justify-center md:flex-row md:justify-start  mt-4 sm:mt-8 ">
+      <div class="w-48 text-white font-roboto font-semibold text-center text-1xl bg-blue-700 opacity-70 p-3 border rounded-md hover:bg-white hover:border-green-500 hover:text-black uppercase">
+        <%= link_to "Learn More", services_path %>
       </div>
-      <div class="mt-4 md:mt-0 md:ml-4">
-        <button class="font-roboto font-semibold p-3 border-2 border-black rounded-sm hover:bg-green-300 opacity-70 text-white uppercase"> Contact Us</button>
+      <div class="w-48 mt-4 text-center md:mt-0 md:ml-4 font-roboto font-semibold p-3 border-2 border-black rounded-md hover:bg-green-300 hover:border-white hover:text-white opacity-70 text-black uppercase">
+        <%= link_to "Contact Us", contact_path %>
       </div>
     </div>
   </div>
@@ -33,8 +32,8 @@
       <div class="mt-4 md:mt-8 justify-center items-center">
         <p class="p-2 md:p-4 text-justify text-1xl">We enable your business growth by offering cutting edge services and consultations around website design, 
           web development, and data analytics.</p>
-        <div class="p-2 justify-center md:p-4">
-          <button class="items-center bg-blue-400 md:w-52 border  border-white text-black text-1xl font-roboto font-semibold p-2">See all services</button>
+        <div class="md:m-4 bg-blue-400 md:w-52 border  border-white text-black text-0.5xl font-roboto font-medium text-center py-2 hover hover:bg-gray-100 hover:text-green-500 hover:border-black"">
+          <%= link_to "See all services", services_path %>
         </div>
       </div>
     </div>
