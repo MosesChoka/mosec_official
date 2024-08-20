@@ -22,3 +22,31 @@ async function initMap() {
   }
   
   initMap();
+
+  (function () {
+    function textareaAutoHeight(el, offsetTop = 0) {
+      el.style.height = 'auto';
+      el.style.height = `${el.scrollHeight + offsetTop}px`;
+    }
+
+    (function () {
+      const textareas = [
+        '#hs-tac-message'
+      ];
+
+      textareas.forEach((el) => {
+        const textarea = document.querySelector(el);
+        const overlay = textarea.closest('.hs-overlay');
+
+        if (overlay) {
+          const { element } = HSOverlay.getInstance(overlay, true);
+
+          element.on('open', () => textareaAutoHeight(textarea, 3));
+        } else textareaAutoHeight(textarea, 3);
+
+        textarea.addEventListener('input', () => {
+          textareaAutoHeight(textarea, 3);
+        });
+      });
+    })();
+  })()
