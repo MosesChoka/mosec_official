@@ -22,6 +22,8 @@ module.exports = {
       },
 
       height: {
+        '50vh': '50vh',
+        '60vh': '60vh',
         '75vh': '75vh',
         '100vh':'100vh',
         '600px':'600px',
