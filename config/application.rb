@@ -41,6 +41,7 @@ module Mosec
     # Don't generate system test files.
     config.generators.system_tests = nil
 
+    # this wil configure the Rails model generator to use FactoryBot to create file stubs whenever we generate a new model
     config.generators do |g|
       g.test_framework :rspec, fixture: true
       g.fixture_replacement :factory_bot, dir: "spec/factories"
