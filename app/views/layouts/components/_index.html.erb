@@ -215,19 +215,7 @@
     </div>
   </div>
 </div>
-<div class=" mx-auto md:my-28 flex flex-col md:flex-row  bg-gradient-to-r from-blue-500 via-white to-green-500 opacity-80 md:h-96">
-  <div class="font-roboto md:py-40 py-10">
-    <p class="sm:mx-28 mx-14 md:text-4xl font-medium md:font-bold text-1xl sm:text-2xl"> Want tips & tricks to get the most out of the internet?</p>
-    <p class="md:mx-28 mx-14 text-sm sm:font-medium md:font-light md:text-1xl md:text-start md:pt-3 sm:text-center"> Sign up to our newsletter today </p>
-  </div>
-  <div class="md:m-10 m-2 mx-14 font-roboto md:py-32 ">
-    <form>
-      <input class="w-48" type="text">
-      <input class="p-3 text-0.5xl" type="submit" value="Submit">
-    </form>
-  </div>
-</div>
-</div>
+<%=render "layouts/components/newsletter"%>
 <div class="py-6 md:py-8">
   <p class="font-roboto font-light text-1xl text-center text-gray-500 mb-4 md:mb-8 mx-28">Some of the projects we have worked on include the following </p>
   <h3 class="font-roboto font-bold text-2xl sm:text-4xl text-center text-blue-500"> Portfolio </h3>
@@ -267,19 +255,11 @@
   </div>
 </div>
 <h3 class="font-roboto font-bold text-center text-2xl sm:text-4xl py-8 sm:py-16">About <span class="text-blue-500">Us</span></h3>
-<div class="flex flex-col md:flex-row md:mx-10">
-  <div class="font-roboto bg-blue-500 h-60 md:h-75vh w-full sm:w-1/2">
-    <h3 class="pt-8 md:pt-48 text-1xl md:text-3xl text-white font-bold text-center"> We are Mosec </h3>
-    <p class="py-4 text-1xl text-sm font-normal text-center">We offer the best services around website design and development, data analytics, and business consultancy</p>
-  </div>
-  <div class="border border-solid border-black h-60 md:h-75vh w-full sm:w-1/2">
-    <iframe class="w-full h-full" src="https://www.youtube.com/embed/poyuhpPXDHE?si=vaGCAR79N7dege0-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
-</div>
-<div class="font-roboto bg-gray-100 md:h-75vh">
+<%= render "layouts/components/aboutmosec"%>
+<div class="font-roboto bg-gray-100 sm:h-75vh pb-6">
   <%= render "layouts/components/testimonials" %>
 </div>
-<h1 class="mt-8 text-2xl sm:text-4xl text-blue-500 text-center font-semibold">Where to find us</h1>
+<h1 class="mt-8 text-2xl sm:text-4xl text-blue-500 text-center font-semibold">Where to find us?</h1>
 <div id="map" class="mt-8 font-roboto">
   
 </div>

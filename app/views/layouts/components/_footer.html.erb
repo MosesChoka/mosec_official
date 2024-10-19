@@ -47,13 +47,13 @@
           <h2 class="mb-3 text-sm font-medium tracking-widest text-blue-500 uppercase title-font">About</h2>
           <nav class="mb-10 list-none">
             <li class="mt-3">
-              <a class="text-gray-500 cursor-pointer hover:text-gray-900">Company</a>
+              <%= link_to "Company" , about_path, class:"text-gray-500 cursor-pointer hover:text-gray-900"%>
             </li>
             <li class="mt-3">
-              <a class="text-gray-500 cursor-pointer hover:text-gray-900">Careers</a>
+              <%= link_to "Careers" ,contact_path, class:"text-gray-500 cursor-pointer hover:text-gray-900"%>
             </li>
             <li class="mt-3">
-              <a class="text-gray-500 cursor-pointer hover:text-gray-900">Blog</a>
+              <%= link_to "Blog" ,blog_path, class:"text-gray-500 cursor-pointer hover:text-gray-900"%>
             </li>
           </nav>
         </div>
@@ -104,7 +104,7 @@
     </div>
     <div class="bg-gray-300">
       <div class="container px-5 py-4 mx-auto">
-        <p class="text-sm text-gray-700 capitalize xl:text-center">Mosec © 2024 All rights reserved </p>
+        <p class="text-sm text-gray-700 capitalize text-center">Mosec © 2024 All rights reserved </p>
       </div>
     </div>
   </footer>
