@@ -7,7 +7,7 @@
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'typing_effect','typing', 'data-turbolinks-track': 'reload' %>
     <%= javascript_importmap_tags %>
   </head>
   <body class="overflow-x-hidden md:overflow-x-hidden">
@@ -15,5 +15,6 @@
     <%= yield %>
     <%= render 'layouts/components/footer' %>
     <script src="./node_modules/preline/dist/preline.js"></script>
+    
   </body>
 </html>

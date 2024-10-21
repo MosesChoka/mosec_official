@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "preline": "^2.4.1"
+    "preline": "^2.4.1",
+    "typed.js": "^2.1.0"
   }
 }
