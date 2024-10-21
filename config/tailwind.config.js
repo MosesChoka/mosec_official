@@ -20,6 +20,9 @@ module.exports = {
         'plan':"url(./assets/tic-tac-toe.png)",
         'about':"url(./assets/Moses.webp)",
       },
+      listStyleImage: {
+        checkmark: 'url("/assets/checkmark.png")',
+      },
 
       height: {
         '50vh': '50vh',
