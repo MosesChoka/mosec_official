@@ -12,9 +12,17 @@
   </head>
   <body class="overflow-x-hidden md:overflow-x-hidden">
     <%= render 'layouts/components/header' %>
+        <!-- Whatsaap floating button -->
+   <!-- WhatsApp Floating Button with Tailwind CSS classes -->
+<a href="https://wa.me/254745138420" 
+   target="_blank" 
+   class="fixed bottom-8 sm:bottom-10 right-10 w-16 h-16 rounded-full shadow-lg flex items-center justify-center z-50 animate-bounce transition-transform duration-200 hover:scale-110">
+  <%= image_tag("/assets/whatsaap.png", alt:"Whatsaap-Icon", class:"w-12 h-12") %>
+</a>
+
     <%= yield %>
     <%= render 'layouts/components/footer' %>
     <script src="./node_modules/preline/dist/preline.js"></script>
-    
+
   </body>
 </html>

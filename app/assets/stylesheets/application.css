@@ -14,6 +14,22 @@
  *= require_self
  */
 
+.whatsapp-float {
+   position:fixed;
+   /*width: 50px;*/
+   /*height: 50px;*/
+   bottom: 40px;
+   right: 40px;
+   border-radius: 50px;
+   text-align: center;
+   font-size: 30px;
+   box-shadow: 2px 2px 3px #999;
+   z-index: 1000;
+   transition: transform 0.2s ease-in-out;
+   animation: bounce 1s infinite;
+
+}
+
 
 
  #map {
