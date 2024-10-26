@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'contact', to:'pages#contact'
   get 'projects', to:'pages#projects'
   get 'blog', to:'pages#blog'
+  get '/sitemap.xml', to: 'sitemap#index', defaults: { format: 'xml' }
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
