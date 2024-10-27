@@ -1,13 +1,17 @@
 <div class="relative h-75vh bg-cover bg-center bg-hero-image">
   <div class="absolute inset-0 bg-gradient-to-t from-gray-600 via-blue-500 to-green-300 opacity-50"></div>
-  <div class="relative inset-2 py-24 sm:py-60 sm:ml-80 sm:inset-3 justify-center mx-2 ">
-    <div class="mt-8 md:w-34rem sm:text-balance ">
-      <h2 class="font-roboto md:font-bold text-2xl md:text-4xl text-center text-black sm:text-left">Small businesses <span class="text-blue-400 md:text-4xl">W</span>ebsite design, development</h1>
+  <div class="relative inset-2 py-24 sm:py-60 sm:inset-3 justify-center mx-2">
+    <div class="mt-8 md:w-34rem sm:ml-20 md:ml-80">
+      <h2 class="font-roboto md:font-bold text-2xl md:text-4xl text-center sm:text-start text-black">Small businesses <span class="text-blue-400 md:text-4xl">W</span>ebsite design, development</h1>
       <h2 class="font-roboto md:font-semibold text-2xl md:text-3xl text-center text-white sm:text-left"> & <span class= md:text-4xl">A</span>nalytics services</h2>
     </div>
-    <div class=" font-roboto  flex flex-col items-center justify-center md:flex-row md:justify-start  mt-4 sm:mt-8 ">
+    <div class=" font-roboto  flex flex-col items-center justify-center md:flex-row md:justify-start  mt-4 sm:mt-8 sm:ml-20 md:ml-80">
       <div class="w-48 text-white font-roboto font-semibold text-center md:text-base text-sm bg-blue-700 opacity-70 p-2 border rounded-md hover:bg-white hover:border-green-500 hover:text-black uppercase">
-        <%= link_to "Learn More", services_path %>
+        <%= link_to "Our Services", services_path %>
+        <svg class="inline-block w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+        </svg>
+
       </div>
       <div class="w-48 mt-4 text-sm md:text-base text-center md:mt-0 md:ml-4 font-roboto font-semibold p-2 border border-black rounded-md hover:bg-green-300 hover:border-white hover:text-white opacity-70 text-black uppercase">
         <%= link_to "Contact Us", contact_path %>
@@ -51,7 +55,13 @@
         <h2 class="ml-2 font-bold text-blue-400">Website Design</h2>
         <p class="ml-2 text-sm sm:text-1xl font-thin pt-1">We design custom web apps that are user friendly and mobile responsive. We follow the mobile-first approach to design</p>
         <br/>
-        <%= link_to "Learn more ...", services_path, class:"ml-2 text-sm font-normal text-blue-400"%>
+        <div>
+          <%= link_to "web design services", services_path, class:"ml-2 text-sm font-normal text-blue-400 lowercase"%>
+          <svg class="inline-block w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+          </svg>
+        </div>
+
       </div>
       <div class="w-80 sm:w-96 h-60 md:h-fit m-2 rounded-sm border-b-4 bg-green-50 shadow-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-gray-50 duration-300">
         <svg class="w-8 m-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
@@ -60,7 +70,12 @@
         <h2 class="ml-2 font-bold text-blue-400">Website Development</h2>
         <p class="ml-2 text-sm sm:text-1xl font-thin pt-1">Our web apps are fully hand coded without relying on CMS templates or Wordpress.</p>
         <br/>
-        <%= link_to "Learn more ...", services_path, class:"ml-2 text-sm font-normal text-blue-400"%>
+        <div>
+          <%= link_to "web development services", services_path, class:"ml-2 text-sm font-normal text-blue-400 lowercase"%>
+          <svg class="inline-block w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+          </svg>
+        </div>
       </div>
       <div class="w-80 sm:w-96 h-60 md:h-fit m-2 rounded-sm bg-gray-50 md:bg-green-50 border-b-4 shadow-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-gray-50 duration-300">
         <svg class="w-8 m-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
@@ -71,7 +86,12 @@
         <h2 class="ml-2 font-bold text-blue-400">Website Maintenance</h2>
         <p class="ml-2 text-sm sm:text-1xl font-thin pt-1">Reliable web hosting and maintenance to keep your site secure, updated and running smoothly.</p>
         <br/>
-        <%= link_to "Learn more ...", services_path, class:"ml-2 text-sm font-normal text-blue-400"%>
+        <div>
+          <%= link_to "web maintenance services", services_path, class:"ml-2 text-sm font-normal text-blue-400 lowercase"%>
+          <svg class="inline-block w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+          </svg>
+        </div>
       </div>
       <div class="w-80 sm:w-96 h-60 md:h-fit m-2 rounded-sm border-b-4 bg-green-50 md:bg-gray-50 shadow-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-green-50  duration-300">
         <svg class="w-8 m-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
@@ -81,7 +101,12 @@
         <h2 class="ml-2 font-bold text-blue-400">Data Analytics</h2>
         <p class="ml-2 text-sm font-thin pt-1">Using data to enable you make informed business decision. Data driven decision are informed decisions.</p>
         <br>
-        <%= link_to "Learn more ...", services_path, class:"ml-2 text-sm font-normal text-blue-400"%>
+        <div>
+          <%= link_to "analytics services", services_path, class:"ml-2 text-sm font-normal text-blue-400 lowercase"%>
+          <svg class="inline-block w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+          </svg>
+        </div>      
       </div>
     </div>
   </div>

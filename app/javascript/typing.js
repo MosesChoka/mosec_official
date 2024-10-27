@@ -45,3 +45,4 @@ document.addEventListener('DOMContentLoaded', function () {
   // Observe the h1 element directly
   observer.observe(element);
 });
+
