@@ -8,10 +8,10 @@ class PagesController < ApplicationController
   def services
   end
 
-  def contact
+  def projects
   end
 
-  def projects
+  def subs
   end
 
   def blog
