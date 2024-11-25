@@ -17,36 +17,14 @@ async function initMap() {
        map,
        position: { lat: 0.0593318, lng: 34.2835138 },
     });
+
+    marker.addListener('click', ({domEvent, latLng}) => {
+      const {target} = domEvent;
+      // Handle the click event.
+      // ...
+    });
     
 
   }
   
   initMap();
-
-  (function () {
-    function textareaAutoHeight(el, offsetTop = 0) {
-      el.style.height = 'auto';
-      el.style.height = `${el.scrollHeight + offsetTop}px`;
-    }
-
-    (function () {
-      const textareas = [
-        '#hs-tac-message'
-      ];
-
-      textareas.forEach((el) => {
-        const textarea = document.querySelector(el);
-        const overlay = textarea.closest('.hs-overlay');
-
-        if (overlay) {
-          const { element } = HSOverlay.getInstance(overlay, true);
-
-          element.on('open', () => textareaAutoHeight(textarea, 3));
-        } else textareaAutoHeight(textarea, 3);
-
-        textarea.addEventListener('input', () => {
-          textareaAutoHeight(textarea, 3);
-        });
-      });
-    })();
-  })()
