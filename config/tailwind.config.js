@@ -31,12 +31,14 @@ module.exports = {
         '100vh':'100vh',
         '600px':'600px',
         '900px': '900px',
+        
       },
 
       width: {
         '34rem':'34rem',
         '72rem':'72rem',
         '900px':'900px',
+        '3000px': '3000px',
       },
 
       boxShadow: {
